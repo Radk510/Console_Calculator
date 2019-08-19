@@ -10,20 +10,13 @@ namespace Console_Calculator
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("This is console Calculator. Want to count something?\n\n");
+            GetValues getValues = new GetValues();
             char continueOrNot = 'y';
             do
             {
-                Console.WriteLine("This is console Calculator. Want to count something?\n\n");
-            
-                Console.Write("Type the first number: ");
-                double numberOne = 0;
-                bool propperNumberOne = double.TryParse(Console.ReadLine(), out numberOne); ;
-                while (!propperNumberOne)
-                {
-                    Console.Write("Try again. You should type only the number: ");
-                    propperNumberOne = double.TryParse(Console.ReadLine(), out numberOne);
-                    //Console.Clear();
-                }
+                Console.Write("Type the first number: ");                
+                double numberOne = getValues.GetValuesToCount();
 
                 Console.Write("Choose what you want to do. Type some of this: '+'; '-'; '*'; '/':  ");
                 char mathOperator;
@@ -35,13 +28,7 @@ namespace Console_Calculator
                 }
 
                 Console.Write("Type the second number: ");
-                double numberTwo = 0;
-                bool propperNumberTwo = double.TryParse(Console.ReadLine(), out numberTwo);
-                while (!propperNumberTwo)
-                {
-                    Console.Write("Try again. You should type only the number: ");
-                    propperNumberTwo = double.TryParse(Console.ReadLine(), out numberTwo);
-                }
+                double numberTwo = getValues.GetValuesToCount();                
 
                 Math_Operations.Operations(numberOne, mathOperator, numberTwo);
 
@@ -53,10 +40,7 @@ namespace Console_Calculator
                     propperDesition = char.TryParse(Console.ReadLine(), out continueOrNot);
                 }
 
-            } while (continueOrNot == 'y');
-
-
-            //Console.ReadLine();
+            } while (continueOrNot == 'y');       
         }
     }
 }
