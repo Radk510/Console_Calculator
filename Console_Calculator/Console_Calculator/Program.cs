@@ -16,29 +16,16 @@ namespace Console_Calculator
             do
             {
                 Console.Write("Type the first number: ");                
-                double numberOne = getValues.GetValuesToCount();
+                double numberOne = getValues.GetValuesToCount(); // get first number
 
-                Console.Write("Choose what you want to do. Type some of this: '+'; '-'; '*'; '/':  ");
-                char mathOperator;
-                bool propperMathOperator = char.TryParse(Console.ReadLine(), out mathOperator);
-                while (!propperMathOperator)
-                {
-                    Console.Write("Try again. You should type only the math operator: ");
-                    propperMathOperator = char.TryParse(Console.ReadLine(), out mathOperator);
-                }
+                char mathOperator = getValues.GetMathOperator(); // choose the operator      
 
                 Console.Write("Type the second number: ");
-                double numberTwo = getValues.GetValuesToCount();                
+                double numberTwo = getValues.GetValuesToCount(); // get second number          
 
-                Math_Operations.Operations(numberOne, mathOperator, numberTwo);
+                Math_Operations.Operations(numberOne, mathOperator, numberTwo); // solve the math operstion
 
-                Console.WriteLine("Would you like to count something else? Type 'y' if YES, and 'n' if NO: ");
-                bool propperDesition = char.TryParse(Console.ReadLine(), out continueOrNot);
-                while (!propperDesition)
-                {
-                    Console.WriteLine("Try again, you should type 'y' (continue) or 'n' (break)");
-                    propperDesition = char.TryParse(Console.ReadLine(), out continueOrNot);
-                }
+                continueOrNot = getValues.ContinueQuit(); // decide what to do: continue or quit
 
             } while (continueOrNot == 'y');       
         }
