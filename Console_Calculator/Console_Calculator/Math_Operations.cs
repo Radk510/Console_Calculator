@@ -7,7 +7,9 @@ using System.Threading.Tasks;
 namespace Console_Calculator
 {
     public static class Math_Operations
-    {       
+    {
+        public static double NumberOne { get; set; }
+
         public static void Operations(double numberOne, char mathOperator, double numberTwo)
         {
             switch (mathOperator)
@@ -38,9 +40,6 @@ namespace Console_Calculator
                     Console.BackgroundColor = ConsoleColor.Black;
                     break;
             }
-        }
-
-
-
+        }     
     }
 }
