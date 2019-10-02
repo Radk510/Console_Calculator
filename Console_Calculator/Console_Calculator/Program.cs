@@ -10,6 +10,7 @@ namespace Console_Calculator
     {
         static void Main(string[] args)
         {
+            //Program
             Console.WriteLine("This is console Calculator. Want to count something?\n\n");
             GetValues getValues = new GetValues();
             char continueOrNot = 'y';
