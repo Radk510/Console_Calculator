@@ -16,7 +16,7 @@ namespace Console_Calculator
             char continueOrNot = 'y';
             do
             {
-                Console.Write("Type the first number: ");                
+                Console.Write("Type the first numberr: ");                
                 double numberOne = getValues.GetValuesToCount(); // get first number
 
                 char mathOperator = getValues.GetMathOperator(); // choose the operator      
