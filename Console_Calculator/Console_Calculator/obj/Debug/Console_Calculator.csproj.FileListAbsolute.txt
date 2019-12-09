@@ -5,3 +5,9 @@ D:\PROGECT. Console_Calculator\Console_Calculator\Console_Calculator\obj\Debug\C
 D:\PROGECT. Console_Calculator\Console_Calculator\Console_Calculator\obj\Debug\Console_Calculator.csproj.CoreCompileInputs.cache
 D:\PROGECT. Console_Calculator\Console_Calculator\Console_Calculator\obj\Debug\Console_Calculator.exe
 D:\PROGECT. Console_Calculator\Console_Calculator\Console_Calculator\obj\Debug\Console_Calculator.pdb
+D:\portfolio\trainingGround\CalculatorFromGit\Console_Calculator\Console_Calculator\bin\Debug\Console_Calculator.exe.config
+D:\portfolio\trainingGround\CalculatorFromGit\Console_Calculator\Console_Calculator\bin\Debug\Console_Calculator.exe
+D:\portfolio\trainingGround\CalculatorFromGit\Console_Calculator\Console_Calculator\bin\Debug\Console_Calculator.pdb
+D:\portfolio\trainingGround\CalculatorFromGit\Console_Calculator\Console_Calculator\obj\Debug\Console_Calculator.csprojAssemblyReference.cache
+D:\portfolio\trainingGround\CalculatorFromGit\Console_Calculator\Console_Calculator\obj\Debug\Console_Calculator.exe
+D:\portfolio\trainingGround\CalculatorFromGit\Console_Calculator\Console_Calculator\obj\Debug\Console_Calculator.pdb
